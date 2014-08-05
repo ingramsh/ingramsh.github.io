@@ -17,7 +17,7 @@
   <body>
     <div class="wrapper">
       <header class="without-description">
-        <h1>SASE</h1>
+        <h1><a href="https://sase.azurewebsites.net">SASE</a></h1>
         <p></p>
         <p class="view"><a href="https://github.com/ingramsh">View the Project on GitHub <small>ingramsh</small></a></p>
         <ul>
@@ -36,7 +36,7 @@
 3.  The account key(s) for your Azure or AWS account.
 </code></pre>
 
-            <p>You will be creating an account on a website I've made using .NET MVC that can store multiple storage account credentials for both Azure and/or AWS.  If you do not feel comfortable having your cloud account credentials stored on a 3rd party website, you can delete/edit the keys you stored on my application or user Azure/AWS to reset your key(s) after use.</p>
+            <p>You will be creating an account on a website I've made using .NET MVC that can store multiple storage account credentials for both Azure and/or AWS.  If you do not feel comfortable having your cloud account credentials stored on a 3rd party website, you can delete/edit the keys you stored on my application or use Azure/AWS to reset your key(s) after use.</p>
 
             <h3>Getting Started with SASE</h3>
 
@@ -46,8 +46,10 @@
 4. Input your account key(s) which need to be valid from your actual Azure/AWS acounts.
 5. After creating at least one account, you can click the "Storage Explorer" link.
 </code></pre>
+<h3>Developer Notes</h3>
+<p>The latest update to the project included the ability to store an AWS account to the application.  The blob storage function of the explorer appears to be working just fine for AWS accounts, however queue creation appears to be shakey.  There are additional hoops to jump through with AWS since region assignment appears to be more elaborate than in Azure development.  The application was tested with an already created AWS SQS queue and had appeared to work properly.  However with queue creation there has been trouble getting the queues to operate properly.  The issues shall be sorted out in a future patch.</p>
 <h3>Questions or Comments?</h3>
-<p>This project was created to build and demonstrate a basic cloud project.  As such there are new features being added periodically based on the developer's (me) desire to learn and present new ideas dealing with cloud technologies.  If there are any questions, comments or suggestions that you may have you can email me directly at: ingramsh829 @ gmail .com</p>
+<p>This project was created to build and demonstrate a basic cloud project and is currently in on going development.  As such there are new features being added periodically based on the developer's (me) desire to learn and present new ideas dealing with cloud technologies.  If there are any questions, comments or suggestions that you may have you can email me directly at: ingramsh829 @ gmail .com</p>
 <p>Direct link to the SASE website: </p><a href="https://sase.azurewebsites.net">sase.azurewebsites.net</a>
             <footer>
             <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
